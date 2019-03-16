@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'antd';
 import { connect } from 'dva';
 import Login from '../components/Login';
-import styles from './Layout.less';
+import styles from './layout.less';
 import { routerRedux } from 'dva/router';
 import NProgress from 'nprogress'
 
@@ -41,7 +41,7 @@ const BasicLayout: BasicLayoutComponent<BasicLayoutProps> = props => {
     dispatch(routerRedux.push(path))
   }
   return (
-    <div className={styles.normal}>
+    <div className={styles.layoutRoot}>
       <Button onClick={routerTo.bind(null, '/')}>首页</Button>
       <Button onClick={routerTo.bind(null, '/user')}>个人中心</Button>
       <Button onClick={routerTo.bind(null, '/dolist')}>列表</Button>

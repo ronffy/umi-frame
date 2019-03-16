@@ -4,7 +4,7 @@ import { connect } from 'dva';
 function Home({ username }) {
   return (
     <div>
-      我的名字是：{username}
+      姓名: {username}
     </div>
   );
 }
