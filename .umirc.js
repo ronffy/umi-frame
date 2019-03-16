@@ -11,7 +11,9 @@ export default {
       },
       dynamicImport: { webpackChunkName: true },
       title: 'umi001',
-      dll: true,
+      dll: {
+        include: ['dva', 'dva/router', 'dva/saga', 'dva/fetch', 'antd/es'],
+      },
       locale: {
         enable: true,
         default: 'en-US',
